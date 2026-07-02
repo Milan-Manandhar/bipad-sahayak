@@ -1,0 +1,10 @@
+﻿node_modules/
+frontend-web/node_modules/
+frontend-web/dist/
+backend/venv/
+venv/
+.env
+.env.local
+.env.production
+__pycache__/
+*.pyc
