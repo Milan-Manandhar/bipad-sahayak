@@ -1,11 +1,4 @@
-app = FastAPI(
-    title="AI Bipad Sahayak",
-    description="Nepal's AI-powered Disaster Early Warning and Response Platform",
-    version="1.0.0",
-    lifespan=lifespan,
-    docs_url="/docs",
-    redoc_url="/redoc"
-)import logging
+import logging
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect, Depends, HTTPException, status
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.security import HTTPBearer
@@ -94,25 +87,7 @@ async def lifespan(app: FastAPI):
     logger.info("✅ Database initialized with PostGIS")
     
     # Seed Nepal data if empty
-        # Seed Nepal data only if not already seeded
-    db = SessionLocal()
-    try:
-        from app.models.sensor import RiverSensor
-
-        existing_sensors = db.query(RiverSensor).count()
-
-        if existing_sensors == 0:
-            seed_nepal_data(db)
-            logger.info("✅ Nepal seed data loaded")
-        else:
-            logger.info("✅ Seed data already exists, skipping seeding")
-
-    except Exception as e:
-        db.rollback()
-        logger.warning(f"⚠️ Seed data skipped due to error: {e}")
-
-    finally:
-        db.close()
+    
     
     # Start background tasks
     scheduler.add_job(
