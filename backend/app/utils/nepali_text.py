@@ -1,0 +1,43 @@
+﻿RISK_LEVELS_NEPALI = {
+    "NORMAL": "सामान्य",
+    "LOW": "न्यून जोखिम",
+    "MEDIUM": "मध्यम जोखिम",
+    "HIGH": "उच्च जोखिम",
+    "CRITICAL": "अत्यन्त उच्च जोखिम"
+}
+
+DISTRICT_NAMES_NEPALI = {
+    "Kathmandu": "काठमाडौं",
+    "Lalitpur": "ललितपुर",
+    "Bhaktapur": "भक्तपुर",
+    "Kavrepalanchok": "काभ्रेपलाञ्चोक",
+    "Sindhupalchok": "सिन्धुपाल्चोक",
+    "Dolakha": "दोलखा",
+    "Ramechhap": "रामेछाप",
+    "Sindhuli": "सिन्धुली",
+    "Makwanpur": "मकवानपुर",
+    "Chitwan": "चितवन",
+    "Dhading": "धादिङ",
+    "Nuwakot": "नुवाकोट",
+    "Rasuwa": "रसुवा",
+    "Sunsari": "सुनसरी",
+    "Bardiya": "बर्दिया",
+    "Tanahun": "तनहुँ",
+    "Dang": "दाङ",
+    "Ilam": "इलाम",
+    "Rupandehi": "रुपन्देही",
+    "Jhapa": "झापा",
+    "Morang": "मोरङ",
+    "Saptari": "सप्तरी",
+    "Siraha": "सिराहा",
+    "Dhanusha": "धनुषा",
+    "Banke": "बाँके",
+    "Kailali": "कैलाली",
+    "Gorkha": "गोरखा",
+    "Kaski": "कास्की",
+    "Parsa": "पर्सा",
+    "Bara": "बारा",
+    "Rautahat": "रौतहट",
+    "Sarlahi": "सर्लाही",
+    "Mahottari": "महोत्तरी"
+}
