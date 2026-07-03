@@ -4,7 +4,8 @@ export default function App() {
   const [health, setHealth] = useState(null)
   const [status, setStatus] = useState(null)
   const [alerts, setAlerts] = useState([])
-
+  const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000'
+  
   useEffect(() => {
     // Fetch backend health
     fetch('http://localhost:8000/health')
